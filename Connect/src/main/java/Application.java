@@ -10,7 +10,7 @@ public class Application {
         Scanner input = new Scanner(System.in);
         Menus menu = new Menus();
         Production production = new Production(0);
-        User user = new User("Z259693", "170815Tutu!", 464, "Fernando de Freitas Rodrigues", production);
+        User user = new User("Z259693", "170815Tutu!", 464, "Fernando de Freitas Rodrigues");
 
         menu.showLoginScreen();
         while (!Objects.equals(input.next(), user.getLogin())) {
@@ -25,7 +25,7 @@ public class Application {
         menu.showOptionsMenu();
         int option = input.nextInt();
         if (option == 1) {
-            production.productionDetails();
+            production.details();
         } else if (option == 2) {
             manager.list();
         } else {

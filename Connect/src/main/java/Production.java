@@ -8,7 +8,7 @@ public class Production {
         this.partial = partial;
     }
 
-    public void productionDetails() {
+    public void details() {
         double result = goal - partial;
         System.out.println("Falta " + result + " Para Você bater a meta do mes");
         System.out.println("Sua produção atual é " + partial);

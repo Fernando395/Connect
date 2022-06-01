@@ -5,12 +5,12 @@ public class User {
     private String name;
     private Production production;
 
-    public User(String login, String password, int RE, String name, Production production) {
+    public User(String login, String password, int RE, String name) {
         this.login = login;
         this.password = password;
         this.RE = RE;
         this.name = name;
-        this.production = production;
+        this.production = new Production(0);
     }
 
     public String getLogin() {
